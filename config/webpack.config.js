@@ -54,6 +54,10 @@ const loaders = {
   handlebars: {
     test: /\.hbs$/,
     loader: "handlebars-loader"
+  },
+  file: {
+    test: /\.(png|jpg|jpeg|gif|ttf|eot|woff(2)?|svg)$/,
+    loader: "file-loader"
   }
 };
 
@@ -112,7 +116,7 @@ module.exports = {
     plugins.copy
   ],
   module: {
-    rules: [loaders.babel, loaders.handlebars, loaders.sass]
+    rules: [loaders.babel, loaders.handlebars, loaders.sass, loaders.file]
   },
   mode: process.env.NODE_ENV
 };
