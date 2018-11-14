@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { Store } from "@redux";
 import { Locale } from "@locale";
 
-import "@themes/style.scss";
+import "@styles/style.scss";
 
 // Initialize Locale
 Locale.init();
