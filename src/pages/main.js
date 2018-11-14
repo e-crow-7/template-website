@@ -2,13 +2,10 @@ import ReactDOM from "react-dom";
 import React, { Component } from "react";
 import { Provider } from "react-redux";
 
-import { Store } from "@redux";
-import { Locale } from "@locale";
+import { Store } from "../redux";
 
 import "@styles/style.scss";
 
-// Initialize Locale
-Locale.init();
 class Application extends Component {
   render() {
     return <div />;
